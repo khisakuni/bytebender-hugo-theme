@@ -1,0 +1,32 @@
+{{ define "main" }}
+
+<div class="hero container">
+  <div>
+    <picture>
+      <!-- User prefers light mode: -->
+      <source srcset="/logo-light.png" media="(prefers-color-scheme: light)" />
+
+      <!-- User prefers dark mode: -->
+      <source srcset="logo-dark.png" media="(prefers-color-scheme: dark)" />
+
+      <!-- User has no color preference: -->
+      <img src="logo-light.png" class="rotating" />
+    </picture>
+  </div>
+  <div class="hero-text">
+    <p><i>My name is</i></p>
+    <h1>Kohei Hisakuni</h1>
+    <div style="display: flex; align-items: baseline;">
+      <p><i>and I</i></p>
+      <p class="large">create and maintain software.</p>
+    </div>
+    <p class="detail">
+      I fell in love with coding while taking a
+      computer science class on a whim in undergrad, and have been a devoted student of the craft ever since.
+    </p>
+  </div>
+</div>
+<div class="content">
+  {{ .Content }}
+</div>
+{{ end }}
