@@ -1,5 +1,18 @@
 languageCode = 'en-US'
 
+[menus]
+  [[menus.main]]
+    name = 'About'
+    pageRef = '/'
+
+  [[menus.main]]
+    name = 'Work'
+    pageRef = '/work'
+
+  # [[menus.main]]
+  #   name = 'Writing'
+  #   pageRef = '/writing'
+
 [module]
   [module.hugoVersion]
     extended = false
