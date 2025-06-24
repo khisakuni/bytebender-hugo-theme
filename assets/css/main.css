@@ -201,6 +201,10 @@ nav ul li.active a {
   width: 100px;
 }
 
+.bender-link {
+  color: light-dark(var(--light-color), var(--dark-color));
+}
+
 /* Mobile */
 @media (max-width: 800px) {
   .container {
@@ -214,6 +218,14 @@ nav ul li.active a {
   .header {
     gap: 0px;
     justify-content: space-around;
+    margin: 0 auto;
+  }
+
+  .bender-link {
+    width: 100%;
+  }
+
+  .bender {
     margin: 0 auto;
   }
 }
