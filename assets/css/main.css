@@ -233,4 +233,8 @@ nav ul li.active a {
   .hero-text {
     margin: 0;
   }
+
+  main {
+    padding: 0 24px;
+  }
 }
