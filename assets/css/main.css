@@ -71,6 +71,7 @@ a {
 .hero {
   margin: 2rem auto 4rem;
   align-items: center;
+  justify-content: center;
 }
 
 /* Home page */
